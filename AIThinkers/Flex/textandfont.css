@@ -1,0 +1,26 @@
+h1{
+	text-align: center;
+	color: yellow;
+
+}
+
+p{
+	color: palegreen !important;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 25%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 100%;
+font-family: 'Poiret One', cursive;
+}
+
+.boxmodel{
+	color: orange;
+	display: inline-block;
+	padding: 20px;
+	border:5px solid pink;
+	margin:  25px;
+	width: 30px;
+	height: 50px;
+}

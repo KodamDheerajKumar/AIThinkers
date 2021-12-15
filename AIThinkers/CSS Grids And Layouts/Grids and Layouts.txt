@@ -1,0 +1,20 @@
+https://grid.malven.co/
+  
+  This is the link is used for CSS Grids
+  
+
+ grid-area :  grid-row-start/ grid-column-start /grid-row-end / grid-column-end
+
+order:
+
+        If grid items aren't explicitly placed with grid-area, grid-column, grid-row, etc., they are automatically placed according to their order in the source code. 
+        We can override this using the order property, which is one of the advantages of grid over table-based layout.
+        By default, all grid items have an order of 0, but this can be set to any positive or negative value, similar to z-index.
+
+Completed the CSS Grid from the course.
+
+
+Done with the Grid Game.
+
+
+Created a layout from the course and done with the CSS Grids and Layouts Section...

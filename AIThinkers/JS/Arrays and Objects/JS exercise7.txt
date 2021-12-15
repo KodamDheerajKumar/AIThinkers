@@ -1,0 +1,52 @@
+// Create an object and an array which we will use in our facebook exercise. 
+
+// 1. Create an object that has properties "username" and "password". Fill those values in with strings.
+
+{
+username:"Dheeraj",
+password:"1234",
+}
+
+{username: 'Dheeraj', password: '1234'}
+
+
+
+// 2. Create an array which contains the object you have made above and name the array "database".
+
+
+var  database={
+username:"Dheeraj",
+password:"1234",
+}
+undefined
+
+{username: 'Dheeraj', password: '1234'}
+
+
+// 3. Create an array called "newsfeed" which contains 3 objects with properties "username" and "timeline".
+
+
+var newsfeed=[
+{
+username:"Dheeraj",
+timeline:"Helloo"
+},
+{
+username:"Arun",
+timeline:"Hiiiii"
+},
+{
+username:"Amith",
+timeline:"Heyyy"
+}
+]
+undefined
+
+
+newsfeed
+(3) [{…}, {…}, {…}]
+0: {username: 'Dheeraj', timeline: 'Helloo'}
+1: {username: 'Arun', timeline: 'Hiiiii'}
+2: {username: 'Amith', timeline: 'Heyyy'}
+length: 3
+[[Prototype]]: Array(0

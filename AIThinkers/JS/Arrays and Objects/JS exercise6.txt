@@ -1,0 +1,49 @@
+// using this array,
+// var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+
+// 1. Remove the Banana from the array.    
+  ==>    array.shift()
+         'Banana'
+
+// 2. Sort the array in order.
+
+==>   array.sort()
+(3) ['Apples', 'Blueberries', 'Oranges']
+          
+// 3. Put "Kiwi" at the end of the array.
+   
+==>   array.push("Kiwi")
+        ['Apples', 'Bluberries, Oranges, Kiwi']
+
+// 4. Remove "Apples" from the array.
+
+==> array.shift()
+    'Apples'                                   array.splice(1,3);
+    ['Bluberries, Oranges, Kiwi']    or       (3) ['Bluberries', 'Oranges', 'Kiwi']
+
+// 5. Sort the array in reverse order. (Not alphabetical, but reverse
+// the current Array i.e. ['a', 'c', 'b'] becomes ['b', 'c', 'a'])
+
+you should have at the end:
+["Kiwi", "Oranges", "Blueberries"]
+
+==>  array.reverse()
+     
+     ['Kiwi', 'Oranges', 'Blueberries']
+
+// using this array,
+// var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+// access "Oranges".
+
+
+==>
+array24
+(2) ['Banana', Array(3)]
+0: "Banana"
+1: (3) ['Apples', Array(1), 'Blueberries']
+length: 2
+[[Prototype]]: Array(0)
+
+array24[1][1]
+['Oranges']

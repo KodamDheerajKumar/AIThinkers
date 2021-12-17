@@ -1,0 +1,174 @@
+DOM Selectors:
+--------------
+
+
+getElementsByTagName::::::::::::
+
+document.getElementsByTagName("h1");
+
+HTMLCollection [h1]
+
+getElementsByClassName::::::::::
+
+document.getElementsByClassName("second");
+
+HTMLCollection [p.second]
+
+document.getElementsByClassName("second")[0];
+
+<p class=​"second">​No excuses​</p>​     
+
+
+getElementById:::::::::::::::
+
+document.getElementById("first");
+
+<p id=​"first">​Get it done today​</p>​
+/
+
+querySelector::::::::::::
+
+document.querySelector("h1")
+<h1>​Shopping List​</h1>​                      
+
+document.querySelector("p")
+<p id=​"first">​Get it done today​</p>​            //queryselector selects the first element of selected tag
+
+document.querySelector("li")
+ <li random=​"23">​Notebook</li>​                 
+/
+
+ querySelectorAll:::::::::::
+
+ document.querySelectorAll("li")
+NodeList(6) [li, li, li, li, li, li]
+0: li
+1: li                                           //querySelectorAll selcts all the elements in the selected tag
+2: li
+3: li
+4: li
+5: li
+length: 6
+[[Prototype]]: NodeList
+
+document.querySelectorAll("li,h1,p")
+NodeList(9) [h1, p#first, p.second, li, li, li, li, li, li]
+0: h1
+1: p#first
+2: p.second
+3: li
+4: li
+5: li
+6: li
+7: li
+8: li
+length: 9
+[[Prototype]]: NodeList
+
+
+
+getAttribute:::::::::
+
+document.querySelector("li").getAttribute("random");
+'23'                                                         //gets the attribute
+ 
+
+ setAttribute:::::::::
+
+document.querySelector("li").setAttribute("random","50");
+undefined                                                     // sets the attribute to the given value
+document.querySelector("li");
+<li random=​"50">​…​</li>​           
+
+##Changing Styles:
+style.{property} :::::::::::
+
+var h1 =document.querySelector("h1")
+undefined                                     // with the use of class name used in css we can also change styles
+h1
+<h1>​Shopping List​</h1>​
+h1.className="cool"
+'cool'
+
+document.querySelector("li").classList
+DOMTokenList(2) ['bold', 'red', value: 'bold red']        //classList gives the list or no. of class present
+
+
+classList.add:::::::::::::::::::
+classList.remove::::::::::::::
+classList.toggle:::::::::::::::::
+
+document.querySelector("li").classList
+DOMTokenList(2) ['bold', 'red', value: 'bold red']
+
+document.querySelector("li").classList.add("hot")    
+undefined             //classList.add adds the style or attribute
+
+document.querySelector("li").classList           
+DOMTokenList(3) ['bold', 'red', 'hot', value: 'bold red hot']
+
+document.querySelector("li").classList.remove("hot")
+undefined           //classList.remove  removes the selected style 
+
+document.querySelector("li").classList
+DOMTokenList(2) ['bold', 'red', value: 'bold red']
+
+
+document.querySelector("li").classList.toggle("hot")
+true           //instead of remove we can use toggle to re-insert or to delete
+
+document.querySelector("li").classList
+DOMTokenList(3) ['bold', 'red', 'hot', value: 'bold red hot']
+
+document.querySelector("li").classList.toggle("hot")
+false
+
+document.querySelector("li").classList
+DOMTokenList(2) ['bold', 'red', value: 'bold red']
+
+##Bonus:
+innerHTML ::::::::::::
+
+document.querySelector("h1").innerHTML="!!!! ";
+'!!!! '
+
+document.querySelector("h1").innerHTML="<strong> !!!!  </strong>";         //innerHTML used to change anything in the HTML in JS
+'<strong> !!!!  </strong>'
+
+document.querySelector("h1");
+<h1>​<strong>​ !!!! ​</strong>​</h1>​
+
+
+parentElement:::::::::
+children:::
+
+
+document.querySelector("li").parentElement;
+<ul>​…​</ul>​<li class=​"bold red" random=​"23">​…​</li>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​</ul>​
+
+document.querySelector("li").parentElement.parentElement;                        
+<body>​…​</body>​
+
+document.querySelector("li").parentElement.parentElement.parentElement;             //.parentElement and .children elements are used to search the parents and childrens 
+<html>​<head>​…​</head>​<body>​…​</body>​</html>​
+
+document.querySelector("li").parentElement.parentElement.parentElement.parentElement;
+null
+
+document.querySelector("li").parentElement.parentElement.parentElement.children;
+HTMLCollection(2) [head, body]
+0: head
+1: body
+length: 2                                
+[[Prototype]]: HTMLCollection
+
+document.querySelector("li").parentElement.parentElement.children;
+HTMLCollection(5) [h1, p#first, p.second, ul, script, first: p#first]
+0: h1
+1: p#first
+2: p.second
+3: ul
+4: script
+first: p#first
+length: 5
+[[Prototype]]: HTMLCollection

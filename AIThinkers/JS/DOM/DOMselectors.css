@@ -1,0 +1,14 @@
+.cool {
+	font-family: "oswald",
+	font-size:50px;
+	letter-spacing: 5px;
+	color: tomato;
+	text-align: center;
+
+}
+
+
+.hot{
+	text-decoration: line-through;
+	text-shadow: black;
+}

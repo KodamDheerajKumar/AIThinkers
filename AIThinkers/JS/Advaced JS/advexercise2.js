@@ -46,3 +46,24 @@ undefined
 undefined
 
 //BONUS: practice makes perfect. Go and write your own switch function. It takes time to get used to the syntax!
+
+function zoo(numbers) {
+	var animals;
+	switch (numbers){
+		case "1":
+		return animals="Tiger";
+		break;
+		case "2":
+		return animals="Lion";
+		break;
+		case "3":
+		return animals="Lepord";
+		break;
+		case "4":
+		return animals="Monkey";
+		break;
+		default:
+		animals= "please enter";
+	}
+	return animals;
+}

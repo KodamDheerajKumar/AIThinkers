@@ -1,0 +1,23 @@
+ls    => shows the list of contents in the directory
+pwd    =>present windoe directory
+cd 
+cd ..
+clear   =>cleras the entire command screen
+cd / **—> root director**
+cd ~
+cd <folder/folder/folder> ** <> means to add your own folder names that exist on your computer.
+mkdir <folder>         =>creates new folder
+start <folder>        =>opens the folder
+touch index.html  or    echo "" > index.html         =>creates file
+start index.html
+
+echo 'alias subl="/C/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"' 
+subl  => opens sublime text
+
+start .
+mv index.html about.html       =>moves index.html to about.html
+
+*Try using the Up and Down arrow     =>shows the history  
+ 
+rm <file>             =>removes only files
+rm -r <folder>         =>removes only folders
